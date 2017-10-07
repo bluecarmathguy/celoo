@@ -16,3 +16,6 @@ class nSidedDice:
                 ii.roll();
         def getValues(self):
             return([ii.readDie() for ii in self.dice])
+        def getSum(self):
+            f = lambda x,y: x+y
+            return(reduce(f,self.getValues()))
