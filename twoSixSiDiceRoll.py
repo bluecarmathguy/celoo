@@ -16,6 +16,8 @@ class twoSixSiDiceRoll:
         self.values = self.dice.getValues();
         self.values.sort()
         self.getCall();
+    def getTotal(self):
+        return(self.dice.getSum())
     def getCall(self):
         self.call = "Ooops";        
         if self.values is not None:
